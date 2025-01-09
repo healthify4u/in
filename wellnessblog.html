@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="import" href="responsive nav/index.html">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Blog Page with Social Sharing</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="bstyle.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo" >
+            <a href="index.html" id="logo" >Healthify4u</a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li>
+                <a href="#blog-categories">Blog Categories</a>
+                <ul>
+                    <li><a href="bpost.html">Wellness</a></li>
+                    <li><a href="#nutrition">Nutrition</a></li>
+                    <li><a href="#fitness">Fitness</a></li>
+                </ul>
+            </li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+  <div class="container">
+    <!-- Blog Layout -->
+    <div class="blog-container">
+      <!-- Main Blog Content -->
+      <div class="blog-content">
+        <img src="https://via.placeholder.com/800x400" alt="Blog Image">
+        <h2>How to Build a Strong Fitness Routine</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet tincidunt arcu. Morbi sit amet interdum lorem. Integer vitae tellus id eros vulputate sollicitudin. Vivamus ac urna ut tortor tincidunt eleifend.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet tincidunt arcu. Morbi sit amet interdum lorem. Integer vitae tellus id eros vulputate sollicitudin. Vivamus ac urna ut tortor tincidunt eleifend.</p>
+
+        <!-- Social Share -->
+        <div class="social-share">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://example.com" target="_blank" title="Share on Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/intent/tweet?url=https://example.com&text=Check out this amazing blog!" target="_blank" title="Share on Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://example.com" target="_blank" title="Share on LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://api.whatsapp.com/send?text=Check this out: https://example.com" target="_blank" title="Share on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="#" title="Copy Link" onclick="navigator.clipboard.writeText('https://example.com'); alert('Link copied!')">
+            <i class="fas fa-link"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <h3>Popular Posts</h3>
+        <ul>
+          <li><a href="#">5 Tips for Better Nutrition</a></li>
+          <li><a href="#">The Best Exercises for Beginners</a></li>
+          <li><a href="#">How to Improve Sleep Quality</a></li>
+        </ul>
+
+        <h3>Recent Posts</h3>
+        <ul>
+          <li><a href="#">The Benefits of Daily Meditation</a></li>
+          <li><a href="#">How to Stay Consistent with Workouts</a></li>
+          <li><a href="#">Why Hydration is Key to Fitness</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Related Posts -->
+    <div class="related-posts">
+      <h3>Related Posts</h3>
+      <div class="related-item">
+        <img src="https://via.placeholder.com/80" alt="Post Image">
+        <div class="related-content">
+          <a href="#">10 Quick and Healthy Breakfast Ideas</a>
+        </div>
+      </div>
+      <div class="related-item">
+        <img src="https://via.placeholder.com/80" alt="Post Image">
+        <div class="related-content">
+          <a href="#">The Science Behind Muscle Growth</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+      <a href="#">&laquo; Prev</a>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">Next &raquo;</a>
+    </div>
+  </div>
+</body>
+</html>
